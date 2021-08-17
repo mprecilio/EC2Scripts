@@ -6,9 +6,7 @@ sudo yum remove docker \
                   docker-latest \
                   docker-latest-logrotate \
                   docker-logrotate \
-                  docker-engine \
-                  podman \
-                  runc
+                  docker-engine
 echo "install the repository"
 sudo yum install -y yum-utils
 sudo yum-config-manager \
@@ -19,3 +17,4 @@ sudo yum install docker-ce --nobest
 echo "starting docker"
 sudo systemctl start docker
 echo "check to see if docker is running"
+#sudo docker run hello-world
