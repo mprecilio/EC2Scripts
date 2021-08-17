@@ -7,7 +7,7 @@ sudo yum install unzip -y
 sudo yum install lsof -y
 
 echo "installing java 8"
-sudo yum install -y java-1.8.0-openjdk-devel
+sudo yum install -y java-11-openjdk-devel
 sudo update-alternatives --config java
 sudo update-alternatives --config javac
 echo "java 8 installed and configured"
