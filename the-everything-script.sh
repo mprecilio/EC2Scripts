@@ -16,3 +16,9 @@ sudo yum-config-manager \
     https://download.docker.com/linux/rhel/docker-ce.repo
 echo "install the engine"
 sudo yum install docker-ce docker-ce-cli containerd.io
+echo "install the engine"
+sudo yum install docker-ce --nobest
+echo "starting docker"
+sudo systemctl start docker
+echo "check to see if docker is running"
+
